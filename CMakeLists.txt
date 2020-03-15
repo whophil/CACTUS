@@ -61,7 +61,7 @@ endif()
 add_definitions(-DVERSION="${CACTUS_VERSION}")
 
 # create source lists
-file(GLOB_RECURSE mod_sources ${PROJECT_SOURCE_DIR}/mod/**.f95)
+file(GLOB_RECURSE mod_sources ${PROJECT_SOURCE_DIR}/src/mod/**.f95)
 file(GLOB_RECURSE prog_sources ${PROJECT_SOURCE_DIR}/src/*.f95)
 
 add_executable(cactus ${prog_sources} ${mod_sources})
